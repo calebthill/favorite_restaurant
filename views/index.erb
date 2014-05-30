@@ -1,0 +1,23 @@
+<h1> Insert your favorite restaurant: </h1>
+
+<form action="/restaurants" method="post">
+      <label for="Name of restaurant">Name of restaurant:</label>
+      <input type="text" id="restaurant_name" name="restaurant_name" value="<%= params[:restaurant_name] %>"/>
+      <br>
+      <label for="average_meal">Average meal price:</label>
+      <input type="text" id="price" name="price" value="<%= params[:price] %>"/>
+      <br>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" value="<%= params[:address] %>"/>
+      <br>
+      <label for="food_type">Food type:</label>
+      <input type="text" id="food_type" name="food_type" value="<%= params[:food_type] %>"/>
+      <br>
+      <label for="distance">Distance from Launch? (in blocks)</label>
+      <input type="text" id="distance" name="distance" value="<%= params[:distance] %>"/>
+      <input type="submit"/>
+ </form>
+
+
+
+
